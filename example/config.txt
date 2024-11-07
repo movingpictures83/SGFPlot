@@ -1,0 +1,2 @@
+Prefix plugins/SGFPlot/example/
+Plugin SGFPlot inputfile SpliceGraph.rds outputfile SpliceGraph.pdf
