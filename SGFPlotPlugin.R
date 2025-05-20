@@ -19,7 +19,8 @@ output <- function(outputfile) {
 ## ----figure-1, fig.width=4.5, fig.height=4.5-------------------------------
 pdf(outputfile)
 
-
+#print(str(sgfc_ucsc))
+write.csv(sgfc_ucsc@assays@data$rpkm, paste(outputfile, "csv", sep="."))
 plotFeatures(sgfc_ucsc, geneID = 1)
 }
 
